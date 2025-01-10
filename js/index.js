@@ -18,16 +18,13 @@
   const intersectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.intersectionRatio <= 0.5) {
-          // hidden
-        } else {
-          // show
+        if (entry.isIntersecting) {
           document.querySelector("#PageControll").value = entry.target.attributes.Page.value;
           document.querySelector("#PageControll").dispatchEvent(new Event("sync"));
         }
       });
     }, {
-    threshold: [0.5]
+    threshold: [0.3, 0.7]
   }
   );
 
