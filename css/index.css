@@ -1,0 +1,183 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+#AnimationLogo {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+#AnimationLogo>show-when {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+button {
+  user-select: none;
+}
+
+show-when {
+  display: inline-block;
+}
+
+show-when[hidden] {
+  display: inline-block !important;
+}
+
+[hidden] {
+  user-select: none;
+  pointer-events: none;
+}
+
+[Page] {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.bg-muted {
+  background-color: #f6f8fa;
+}
+
+.bg-primary-light {
+  background-color: #c7e1e1;
+}
+
+.bg-primary-medium {
+  background-color: #78abaf;
+}
+
+.bg-primary-dark {
+  background-color: #13607e;
+}
+
+.bg-primary-black {
+  background-color: #103045;
+}
+
+.dash-primary-light {
+  border-top: 12px dashed #c7e1e1;
+}
+
+.dash-primary-medium {
+  border-top: 12px dashed #78abaf;
+}
+
+.dash-primary-dark {
+  border-top: 12px dashed #13607e;
+}
+
+.dash-primary-black {
+  border-top: 12px dashed #103045;
+}
+
+[TopNav] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.radius {
+  border-radius: 11px;
+}
+
+.block {
+  display: block !important;
+}
+
+.divider-icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  height: 20px;
+  background-size: contain;
+  background-image: url("/media/logo.tp.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.divider-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  max-width: calc(50% - (50px / 2));
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.divider-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100%;
+  max-width: calc(50% - (50px / 2));
+  border-bottom: 1px solid #e5e5e5;
+}
+
+[ocean] {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  bottom: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1000;
+}
+
+[waves] {
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  min-height: 100px;
+  max-height: 150px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+[parallax]>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+[parallax]>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+[parallax]>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+[parallax]>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+[parallax]>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}

@@ -1,0 +1,58 @@
+<div Page="1" class="bg-muted">
+  <div class="uk-section uk-section-xlarge">
+    <div class="uk-container uk-container-large">
+      <div>
+        <div class="uk-text-center">
+          <div id="AnimationLogo">
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="left.600" out="left.600" inDelay="0" outDelay="100">
+              <img is="async-img" src="/media/logo/layer/3.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="right.600" out="right.600" inDelay="100" outDelay="0">
+              <img is="async-img" src="/media/logo/layer/4.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="top.800" out="bottom.800" inDelay="0" outDelay="0">
+              <img is="async-img" src="/media/logo/layer/1.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="top.800" out="bottom.800" inDelay="0" outDelay="0">
+              <img is="async-img" src="/media/logo/layer/2.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="400" outDelay="900">
+              <img is="async-img" src="/media/logo/layer/5.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="500" outDelay="800">
+              <img is="async-img" src="/media/logo/layer/6.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="600" outDelay="700">
+              <img is="async-img" src="/media/logo/layer/6.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="700" outDelay="600">
+              <img is="async-img" src="/media/logo/layer/7.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="800" outDelay="500">
+              <img is="async-img" src="/media/logo/layer/8.png">
+            </show-when>
+            <show-when target="#PageControll.value" regex="1" events='["sync"]' in="bottom.300" out="top.300" inDelay="900" outDelay="400">
+              <img is="async-img" src="/media/logo/layer/9.png">
+            </show-when>
+          </div>
+        </div>
+        <div class="uk-text-center">
+          <show-when class="block" target="#PageControll.value" regex="1" events='["sync"]' in="bottom.600" out="top.600" inDelay="0" outDelay="100">
+            <h1>
+              <anim-text auto mask="|" duration="1000" target="#PageControll.value" regex="1" events='["sync"]'>DeepDive, Inc.</anim-text>
+            </h1>
+            <p class="uk-text-meta">
+              <anim-text auto mask="|" duration="1000" target="#PageControll.value" regex="1" events='["sync"]'>- Nox usque ad auroram, mundus est tuus solus -</anim-text>
+            </p>
+            <div class="uk-margin">
+              <div class="uk-text-meta">
+                <anim-text auto mask="|" duration="1000" target="#PageControll.value" regex="1" events='["sync"]'>scroll down</anim-text>
+              </div>
+              <span uk-icon="chevron-down"></span>
+            </div>
+          </show-when>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
