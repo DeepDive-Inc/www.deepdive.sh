@@ -5,6 +5,7 @@
     document.querySelector(`[Page="${document.querySelector("#PageControll").value}"]`).scrollIntoView({
       behavior: "smooth"
     });
+    document.querySelector("#PageControll").dispatchEvent(new Event("sync"));
   });
   document.querySelector("#PageControll").value = 0;
   document.querySelector("#PageControll").dispatchEvent(new Event("sync"));
